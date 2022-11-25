@@ -1,28 +1,18 @@
 import React from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 export default function Menu() {
   return (
-    <div>
-      <Link href="#" underline="none">
-        {'Home'}
-      </Link>
-      <Link href="#" underline="none">
-        {'Planos'}
-      </Link>
-      <Link href="#" underline="none">
-        {'Sobre'}
-      </Link>
-      <Link href="#" underline="none">
-        {'Depoimentos'}
-      </Link>
-      <Link href="#" underline="none">
-        {'FAQ'}
-      </Link>
-      <Link href="#" underline="none">
-        {'Contato'}
-      </Link>
+    <div className="menu">
+      <Link href="#">{"Home"}</Link>
+      <Link href="#">{"Planos"}</Link>
+      <Link href="#">{"Sobre"}</Link>
+      <Link href="#">{"Depoimentos"}</Link>
+      <Link href="#">{"FAQ"}</Link>
+      <Link href="#">{"Contato"}</Link>
+      <Button href="#">ACESSAR</Button>
     </div>
   );
 }
