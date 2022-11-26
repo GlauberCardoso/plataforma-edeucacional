@@ -1,0 +1,77 @@
+h1,
+h2,
+p {
+  color: #fff;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+.btn {
+  background-color: #ff7d00;
+  border: #171846;
+}
+
+.intercambio button {
+  background-color: #171846;
+}
+
+.div-intercambio {
+  background-image: url("img/new-zeland.jpg");
+  background-size: cover;
+}
+
+.div-avancado {
+  background-color: #171846;
+}
+
+.img-avancado {
+  background-image: url("img/australia.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+}
+
+.div-intermediario {
+  background-color: #171846;
+}
+
+.img-intermediario {
+  background-image: url("img/eua1.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+}
+
+.div-basico {
+  background-color: #171846;
+}
+
+.img-basico {
+  background-image: url("img/inglaterra1.jpg");
+  background-size: cover;
+}
+
+.footer img {
+  width: 5em;
+  height: 5em;
+  margin-right: 1em;
+}
+
+.footer button {
+  border: none;
+  float: right;
+  background-color: none;
+}
+/*
+   * Extra utilities
+   */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
