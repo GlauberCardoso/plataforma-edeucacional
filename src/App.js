@@ -7,7 +7,11 @@ import Menu from "./components/molecules/Menu";
 import Login from "./components/pages/login/Login";
 import Planos from "./components/pages/planos/Planos";
 
-import "./styles/main.css";
+
+import "./components/molecules/menu.css";
+import "./components/pages/login/style/login.css";
+import "./components/pages/planos/style/planos.css";
+
 
 function App() {
   return (

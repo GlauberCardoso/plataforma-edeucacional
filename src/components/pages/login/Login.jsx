@@ -1,9 +1,11 @@
 import React from "react";
 import Menu from "../../molecules/Menu";
-import "./style/login.css";
+
 
 export default function Login() {
   return (
+    <>
+    <Menu />
     <div id="login-container">
       <form action="" method="">
         <label htmlFor="email"></label>
@@ -33,5 +35,6 @@ export default function Login() {
         <a href="#">Cadastre-se</a>
       </div>
     </div>
+    </>
   );
 }

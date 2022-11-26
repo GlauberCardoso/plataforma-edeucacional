@@ -1,8 +1,11 @@
 import React from "react";
-import "./style/planos.css";
+import Menu from "../../molecules/Menu";
+
 
 export default function Planos() {
   return (
+     <>
+    <Menu />
     <div>
       <div class="position-relative overflow-hidden p-5 p-md-5 m-md-3 text-center div-intercambio">
         <div class="intercambio col-md-5 p-lg-5 mx-auto my-5">
@@ -66,5 +69,6 @@ export default function Planos() {
         </div>
       </div>
     </div>
+    </>
   );
 }
