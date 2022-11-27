@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import React from "react";
 import Menu from "./components/molecules/Menu";
 
-
+import Home from "./components/pages/home/Home";
 import Login from "./components/pages/login/Login";
 import Planos from "./components/pages/planos/Planos";
 import Cadastro from "./components/pages/cadastro/Cadastro";
@@ -11,6 +11,7 @@ import AddressForm from "./components/pages/comprar/Comprar";
 
 
 import "./components/molecules/menu.css";
+import "./components/pages/home/style/home.css";
 import "./components/pages/login/style/login.css";
 import "./components/pages/planos/style/planos.css";
 import "./components/pages/cadastro/cadastro.css";
@@ -21,6 +22,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Menu />} />
+        <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/planos" element={<Planos />}/>
         <Route path="/cadastro" element={<Cadastro />}/>

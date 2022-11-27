@@ -25,6 +25,9 @@ export default function Menu() {
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                <li class="nav-item">
+                    <Link to="/" class="nav-link" aria-current="page">Home</Link>
+                  </li>
                   <li class="nav-item">
                     <Link to="/planos" class="nav-link" aria-current="page">Planos</Link>
                   </li>

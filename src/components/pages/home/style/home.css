@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.video-banner {
+    position: relative;
+    max-height: 100%;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.video-banner .marketing-description {
+    position: absolute;
+    background-color: rgba(55, 118, 201, 0.514);
+    color: white;
+    max-width: 600px;
+    height: 99.2%;
+    top: 0;
+    bottom: 0;
+}

@@ -26,6 +26,7 @@ header {
 
 .navbar-toggler {
     flex-wrap: nowrap;
+    border: none;
 }
 
 .nav-item {
@@ -51,8 +52,8 @@ header {
     font-weight: 400;
 }
 
-.navbar-toggler {
-    color: white;
+.navbar-toggler-icon {
+    background-image: url("../../assets/img/menu.png");
 }
 
 .navbar-toggler:focus {
