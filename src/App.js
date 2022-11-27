@@ -7,7 +7,7 @@ import Menu from "./components/molecules/Menu";
 import Login from "./components/pages/login/Login";
 import Planos from "./components/pages/planos/Planos";
 import Cadastro from "./components/pages/cadastro/Cadastro";
-import Comprar from "./components/pages/comprar/Comprar";
+import AddressForm from "./components/pages/comprar/Comprar";
 
 
 import "./components/molecules/menu.css";
@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/planos" element={<Planos />}/>
         <Route path="/cadastro" element={<Cadastro />}/>
-        <Route path="/comprar" element={<Comprar />}/>
+        <Route path="/comprar" element={<AddressForm />}/>
         
       </Routes>
     </BrowserRouter>

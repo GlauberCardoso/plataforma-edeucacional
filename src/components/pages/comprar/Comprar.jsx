@@ -1,8 +1,7 @@
-import React from 'react';
-import Logo from "../../../assets/logo/logo-fundo-azul.PNG"
+import React from 'react'
 
 export default function Comprar() {
   return (
-    <div>vou fazer diferente depois</div>
+    <div>Comprar</div>
   )
 }

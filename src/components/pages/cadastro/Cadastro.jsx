@@ -35,7 +35,7 @@ export default function SignUp() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 30,
+            marginTop: 15,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -87,6 +87,75 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                />
+              </Grid>
+
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  name="cep"
+                  label="Cep"
+                  type=""
+                  id="cep"
+                  
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  name="numero"
+                  label="Número"
+                  type="number"
+                  id="numero"
+                  
+                />
+              </Grid>
+
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="endereco"
+                  label="Endereço"
+                  type="adress"
+                  id="endereco"
+                  
+                />
+              </Grid>
+
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="bairro"
+                  label="Bairro"
+                  type="adress"
+                  id="bairro"
+                  
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  name="cidade"
+                  label="Cidade"
+                  type="adress"
+                  id="cidade"
+                  
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  name="uf"
+                  label="UF"
+                  type="adress"
+                  id="uf"
+                  
                 />
               </Grid>
               
