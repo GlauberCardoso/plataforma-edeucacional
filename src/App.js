@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import React from "react";
-import Menu from "./components/molecules/Menu";
+
 
 import Home from "./components/pages/home/Home";
 import Login from "./components/pages/login/Login";
@@ -21,8 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Menu />} />
-        <Route path="/home" element={<Home />}/>
+        
+        <Route path="/" element={<Home />}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/planos" element={<Planos />}/>
         <Route path="/cadastro" element={<Cadastro />}/>

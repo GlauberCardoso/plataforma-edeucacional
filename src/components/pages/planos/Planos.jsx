@@ -13,8 +13,8 @@ export default function Planos() {
         <div class="intercambio col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 fw-normal">Intercâmbio</h1>
           <p class="lead fw-normal">
-            <Link to="/comprar">Escolha o Pais e nós cuidamos de toda a burocracia.enjoy this
-            experience!24x sem juros</Link>
+            Escolha o Pais e nós cuidamos de toda a burocracia.enjoy this
+            experience!24x sem juros
           </p>
           <a href="../intercambio.html">
             <button type="button" class="btn btn-primary">
@@ -28,24 +28,24 @@ export default function Planos() {
         <div class="div-avancado me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5">Plano Avançado</h2>
-            <p class="lead">
+            <Link to="/comprar"><p class="lead">
               Comprando esse plano o acesso é liberado para todos os cursos da
               plataforma. Live your dreams!
-            </p>
+            </p></Link>
             
           </div>
-          <div class="img-avancado shadow-sm mx-auto"></div>
+          <Link to="/comprar"> <div class="img-avancado shadow-sm mx-auto"></div></Link>
         </div>
         <div class="div-intermediario me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
-            <h2 class="display-5">Plano Intermediário</h2>
-            <p class="lead">
+         <Link to="/comprar"><h2 class="display-5">Plano Intermediário</h2></Link> 
+         <Link to="/comprar"><p class="lead">
               Adquire e ganhe acesso gratuito ao módulo básico para relembrar
               conceitos sempre que precisar. Let's Go!
-            </p>
+            </p></Link>
            
           </div>
-          <div class="img-intermediario shadow-sm mx-auto"></div>
+          <Link to="/comprar"><div class="img-intermediario shadow-sm mx-auto"></div></Link>
         </div>
       </div>
 

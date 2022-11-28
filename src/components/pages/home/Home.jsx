@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
 import Menu from "../../molecules/Menu";
 
 import video from "../../../assets/videos/video-body.mp4";
@@ -30,9 +30,9 @@ export default function Home() {
               Estude no seu ritmo.
             </p>
             <div className="video-banner cadastre-se">
-              <a href="formulário-cadastro/formulario.html">
+              <Link to="/cadastro">
                 <p>Cadastre-se</p>
-              </a>
+                </Link>
             </div>
           </div>
         </div>

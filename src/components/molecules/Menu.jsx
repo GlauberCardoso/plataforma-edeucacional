@@ -9,7 +9,7 @@ export default function Menu() {
       <header>
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <Link to="/home" class="navbar-brand">
+            <Link to="/" class="navbar-brand">
               <img
                 class="d-flex logo img-fluid"
                 src={LogoFundoAzul}
@@ -30,7 +30,7 @@ export default function Menu() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <Link to="/home" class="nav-link" aria-current="page">
+                  <Link to="/" class="nav-link" aria-current="page">
                     Home
                   </Link>
                 </li>
