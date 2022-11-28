@@ -8,11 +8,12 @@ export default function Home() {
   return (
     <>
       <Menu />
-
+      
       <section>
         <div className="video-banner">
-          <video src={video} type="video/mp4" width="750" height="500">
-          </video>
+            <video width="100%" height="800px" autoPlay muted preload="auto" loop>
+              <source src={video} type="video/mp4" />
+            </video>
           <div
             className="marketing-description"
             data-aos="fade-right"
