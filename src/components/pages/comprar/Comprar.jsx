@@ -70,7 +70,7 @@ function PricingContent() {
       <CssBaseline />
       <Menu />
       
-      {/* Hero unit */}
+     
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 3, marginTop: 8 }}>
         <Typography
           component="h3"
@@ -83,11 +83,11 @@ function PricingContent() {
         </Typography>
         
       </Container>
-      {/* End hero unit */}
+      
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
+            
             <Grid
               item
               key={tier.title}
@@ -141,7 +141,7 @@ function PricingContent() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant}>
+                  <Button fullWidth variant={tier.buttonVariant} >
                     {tier.buttonText}
                   </Button>
                 </CardActions>

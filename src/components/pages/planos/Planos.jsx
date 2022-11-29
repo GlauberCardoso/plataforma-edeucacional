@@ -2,9 +2,13 @@ import React from "react";
 import Menu from "../../molecules/Menu";
 
 import {Link} from 'react-router-dom';
+import styled from 'styled-components';
+
 
 
 export default function Planos() {
+
+
   return (
      <>
     <Menu />
@@ -18,7 +22,7 @@ export default function Planos() {
           </p>
           <a href="../intercambio.html">
             <button type="button" class="btn btn-primary">
-              Saiba Mais
+              SAIBA MAIS
             </button>
           </a>
         </div>
@@ -27,7 +31,7 @@ export default function Planos() {
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="div-avancado me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
-            <h2 class="display-5 textos">Plano Avançado</h2>
+          <Link to="/comprar"> <h2 class="display-5 textos">Plano Avançado</h2></Link>
             <Link to="/comprar"><p class="lead textos paragrafos">
               Comprando esse plano o acesso é liberado para todos os cursos da
               plataforma. Live your dreams!
@@ -52,11 +56,11 @@ export default function Planos() {
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="div-basico me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
-            <h2 class="display-5 textos">Plano Básico</h2>
-            <p class="lead textos paragrafos">
+          <Link to="/comprar"> <h2 class="display-5 textos">Plano Básico</h2></Link>
+          <Link to="/comprar"><p class="lead textos paragrafos">
               Comece agora e concorra a bolsas de estudos exclusivas e
               personalizadas.
-            </p>
+            </p></Link>
             
           </div>
           
