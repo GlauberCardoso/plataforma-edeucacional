@@ -1,20 +1,16 @@
 
-
-.cadastro{
-    color: #171846;
-    text-shadow: none;
-    
-    
-}
-
 .button-cadastro{
-     background-color: #726a2c!important;
+     background-color: #FF7D00!important;
+     font-weight: 500!important;
+     font-size: 17px!important;
+     
      
      
 }
 
-.link-acesso{
+.link-acesso-cadastro{
     color: #171846!important;
     text-decoration: none!important;
+    font-weight: 500!important;
 }
 

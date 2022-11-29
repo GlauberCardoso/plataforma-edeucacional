@@ -10,6 +10,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "../../molecules/Menu";
 
+
+import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
 const theme = createTheme();
@@ -43,11 +45,18 @@ export default function SignUp() {
     });
   };
 
+const Title = styled.h1`
+  color: #171846;
+  font-size: 40px;
+  font-weight: 500;
+`
+
+
   return (
     <>
       <Menu />
-      <div className="background-cadastro">
-        <ThemeProvider theme={theme}>
+      
+        <ThemeProvider theme={theme} >
           <Container component="main" maxWidth="xs">
             <CssBaseline />
             <Box
@@ -56,10 +65,11 @@ export default function SignUp() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                
               }}
             >
-              <Typography variant="h4" className="cadastro">
-                Cadastre-se
+              <Typography variant="h4" >
+                <Title>Cadastre-se</Title>
               </Typography>
               <Box
                 component="form"
@@ -190,7 +200,7 @@ export default function SignUp() {
                 </Button>
                 <Grid container justifyContent="flex-end">
                   <Grid item>
-                    <Link to="/login" className="link-acesso" variant="string">
+                    <Link to="/login" className="link-acesso-cadastro" variant="string">
                       Já tem uma conta? Clique aqui
                     </Link>
                   </Grid>
@@ -199,7 +209,7 @@ export default function SignUp() {
             </Box>
           </Container>
         </ThemeProvider>
-      </div>
+        
     </>
   );
 }

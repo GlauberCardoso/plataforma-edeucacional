@@ -13,6 +13,7 @@ import {Link} from 'react-router-dom';
 
 import background from "./style/backgroundmedium.jpg";
 import Menu from "../../molecules/Menu";
+import styled from 'styled-components';
 
 
 
@@ -28,6 +29,11 @@ export default function SignInSide() {
     });
   };
 
+  const Title = styled.h1`
+  color: #171846;
+  font-size: 40px;
+  font-weight: 500;
+`
   return (
     <ThemeProvider theme={theme}>
       <Menu />
@@ -59,7 +65,7 @@ export default function SignInSide() {
           >
             
             <Typography component="h3" variant="h4" sx={{marginTop: 8}}>
-              Login
+              <Title>Login</Title>
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 5 }}>
               <TextField
@@ -91,17 +97,21 @@ export default function SignInSide() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                className="button-cadastro"
               >
                 Entrar
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link href="#" variant="body2"
+                  className="link-acesso-cadastro">
                     Esqueceu a senha?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link to="/cadastro" variant="body2">
+                  <Link to="/cadastro" 
+                  variant="body2"
+                  className="link-acesso-cadastro">
                     {"Não tem conta? Cadastra-se"}
                   </Link>
                 </Grid>

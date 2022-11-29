@@ -1,9 +1,9 @@
-h1,
-h2,
-p {
+.textos {
   color: #fff;
   text-shadow: black 0.2em 0.2em 0.2em;
 }
+
+
 
 .btn {
   background-color: #ff7d00;
@@ -51,21 +51,6 @@ p {
   background-image: url("img/inglaterra1.jpg");
   background-size: cover;
 }
-
-.footer img {
-  width: 5em;
-  height: 5em;
-  margin-right: 1em;
-}
-
-.footer button {
-  border: none;
-  float: right;
-  background-color: none;
-}
-/*
-   * Extra utilities
-   */
 
 .flex-equal > * {
   flex: 1;
