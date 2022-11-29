@@ -2,7 +2,7 @@ import React from "react";
 import Menu from "../../molecules/Menu";
 
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
+
 
 
 
