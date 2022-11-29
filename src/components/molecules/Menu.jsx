@@ -50,13 +50,13 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link to="/contato" class="nav-link">
-                    Contato
+                <Link to="/faq" class="nav-link">
+                    FAQ
                   </Link>
                 </li>
                 <li class="nav-item">
-                <Link to="/faq" class="nav-link">
-                    FAQ
+                  <Link to="/contato" class="nav-link">
+                    Contato
                   </Link>
                 </li>
                 <li class="nav-item">
