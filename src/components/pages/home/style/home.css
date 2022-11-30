@@ -49,6 +49,7 @@
 section#depoimentos {
     height: 800px;
     max-width: 100%;
+    margin-top: -30px;
     background-color: rgb(27, 19, 99);
 }
 
@@ -75,4 +76,131 @@ section#depoimentos img {
     height: auto;
     border-radius: 5px;
     margin: auto;
+}
+
+#faq {
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    height: auto;
+    background-color: #171846;
+    color: #FF7D00;
+}
+
+#faq .datails {
+    max-width: 100%;
+}
+
+#faq h1 {
+    padding-bottom: 50px;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+#faq .accordion-button {
+    text-align: left;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    background-color: #171846;
+    color: white;
+    border: none;
+}
+
+.accordion-button::after {
+    background-image: url('../../../../assets/img/arrow-down.png');
+}
+
+.accordion-button:focus {
+    box-shadow: 0px 0px 13px 1px #ff7b0042;
+}
+
+#faq .accordion-item {
+    text-align: justify;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    background-color: #171846;
+    color: white;
+}
+
+section#contact {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+section#contact form {
+    max-width: 100%;
+    height: auto;
+}
+
+#contact h1{
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 3em;
+    color: #FF7D00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+#contact h2 {
+    width: 100%;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    color: rgb(23, 24, 70);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+#outlined-basic {
+    width: 500px;
+}
+
+#mensagem-basic {
+    block-size: 180px;
+    width: 250px;
+}
+
+#contact form select {
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    width: 520px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.enviar-formulario > button {
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    padding: 10px 15px; 
+    background-color: #FF7D00; 
+    color: white; 
+    border: 0px;
+    border-radius: 20px; 
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-size: 1.1em;
+}
+
+.enviar-formulario > button:hover {
+    cursor: pointer;
+    background-color: #ff7b00b2;
+    scale: 95%;
+}
+
+footer {
+    background-color: rgb(23, 24, 70);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import Menu from "../../molecules/Menu";
+import TextField from '@mui/material/TextField';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 
 
 import video from "../../../assets/videos/video-body.mp4";
@@ -80,6 +82,133 @@ export default function Home() {
         </button>
       </div>
     </section>
+
+    <section id="faq">
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Perguntas Frequentes.</h1>
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Como funcionam os Planos da MGM Online?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Preciso seguir uma ordem específica do curso?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Quais são as formas de pagamento disponíveis?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Qual é a duração do curso?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Como funciona o Intercâmbio?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="300"
+      data-aos-duration="3000">
+        <h1 data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Entrar em Contato!</h1>
+        <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
+        <form action="" method="post">
+            <TextField id="outlined-basic" label="Nome Completo" variant="outlined" required size="small" />
+            <p></p>
+
+            <TextField id="outlined-basic" label="Email" variant="outlined" required size="small" />
+            <p></p>
+
+            <TextField id="outlined-basic" label="País" variant="outlined" required size="small" />
+            <p></p>
+
+            <TextareaAutosize
+              id="outlined-basic"
+              aria-label="empty textarea"
+              placeholder="   Mensagem..."
+              style={{ width: 530 , height: 200}}
+            />
+            <p></p>
+
+            <label for="itemselect">Como você ficou sabendo sobre nós?</label>
+            <p>
+                <select name="item" id="itemselect">
+                    <option value="Select">- Selecione -</option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="A/P">Agência/Parceiro</option>
+                    <option value="A/C">Amigo/Colega</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="check" id="termo-privacidade" required /> <span> </span>
+                <label for="termo-privacidade">Li e concordo com a <Link to="/">Termos e Condições</Link> e <Link to="/">Política de Privacidade</Link></label><br/>
+            </p>
+            <p></p>
+                <div class="enviar-formulario">
+                    <button type="submit">Enviar formulário</button>
+                </div>
+        </form>
+    </section>
+    <footer>
+        Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> e <a href="https://github.com/MikeVitdev">Michael</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
+    </footer>
     </>
   );
 }

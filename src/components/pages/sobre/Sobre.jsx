@@ -14,7 +14,13 @@ export default function Sobre() {
     <Background/>
     <Container fixed>
       <Box mt={5} sx={{ bgcolor: 'white', height: '80vh', borderRadius:'3%'}} />
-      <h1>Quero colocar esse elemento dentro do Box, na frente</h1>
+      <h1
+        style={{
+        zIndex: "20",
+        position: "absolute",
+        marginTop: "-430px",
+        marginLeft: "50px"}}
+      > Quero colocar esse elemento dentro do Box, na frente </h1>
     </Container>
   </React.Fragment>
 
