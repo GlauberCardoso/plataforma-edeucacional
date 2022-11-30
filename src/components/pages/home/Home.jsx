@@ -207,7 +207,7 @@ export default function Home() {
         </form>
     </section>
     <footer>
-        Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> e <a href="https://github.com/MikeVitdev">Michael</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
+        Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
     </footer>
     </>
   );

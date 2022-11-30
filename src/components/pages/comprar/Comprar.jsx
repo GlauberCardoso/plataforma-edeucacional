@@ -15,6 +15,7 @@ import Menu from "../../molecules/Menu";
 import Background from "../../atoms/Background";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Footer from "../../molecules/Footer";
 
 
 
@@ -178,9 +179,9 @@ function PricingContent() {
         </Grid>
       </Container>
      
-      
+      <Footer /> 
     </React.Fragment>
-   
+    
   );
 }
 

@@ -14,6 +14,7 @@ import {Link} from 'react-router-dom';
 import background from "./style/backgroundmedium.jpg";
 import Menu from "../../molecules/Menu";
 import styled from 'styled-components';
+import Footer from "../../molecules/Footer";
 
 
 
@@ -121,6 +122,8 @@ export default function SignInSide() {
           </Box>
         </Grid>
       </Grid>
+      <Footer />
     </ThemeProvider>
+    
   );
 }
