@@ -4,7 +4,6 @@ import Menu from "../../molecules/Menu";
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import { maxWidth } from "@mui/system";
 
 
 export default function Sobre() {
