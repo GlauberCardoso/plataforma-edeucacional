@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "../../molecules/Menu";
 
-
+import Background from "../../atoms/Background";
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
@@ -55,16 +55,20 @@ const Title = styled.h1`
   return (
     <>
       <Menu />
-      
+      <Background/>
         <ThemeProvider theme={theme} >
           <Container component="main" maxWidth="xs">
             <CssBaseline />
             <Box
               sx={{
-                marginTop: 15,
+                marginTop: 11,
+                marginBottom: 0,
+                padding:2,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                bgcolor:'white',
+                height: '100vh'
                 
               }}
             >

@@ -1,16 +1,23 @@
-import React from 'react';
+import React from "react";
 import img from "../pages/sobre/style/sunshine.jpg";
 
-const Background =() => {
-    return(
-      <div>
-        <img style={{zIndex: '-10', position:'absolute'}} src={img} alt="Céu em tons de laranja"/>
-      </div>
-    )
-  }
-
-
+const Background = () => {
+  return (
+    <div>
+      <img
+        style={{
+          zIndex: "-20",
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
+        src={img}
+        alt="Céu em tons de laranja"
+      />
+    </div>
+  );
+};
 
 export default Background;
-
-

@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import Menu from "../../molecules/Menu";
+import Background from "../../atoms/Background";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -85,7 +86,7 @@ function PricingContent() {
       <CssBaseline />
       <Menu />
 
-      
+      <Background/>
       <Container
         disableGutters
         maxWidth="sm"
@@ -96,8 +97,9 @@ function PricingContent() {
           component="h3"
           variant="h3"
           align="center"
-          color="text.primary"
+          color="white"
           gutterBottom
+          sx={{textShadow:'black 0.2em 0.2em 0.2em;'}}
         >
           Start Now!
         </Typography>
