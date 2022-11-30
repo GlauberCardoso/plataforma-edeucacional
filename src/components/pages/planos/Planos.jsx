@@ -29,7 +29,11 @@ export default function Planos() {
             <h2 class="display-5 textos">Plano Avançado</h2>
             <p class="lead textos paragrafos">
               Comprando esse plano o acesso é liberado para todos os cursos da
-              plataforma. Live your dreams!
+              plataforma. Live your dreams! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Incidunt adipisci provident,
+              accusamus eveniet inventore at delectus culpa dolorem alias? Aut
+              soluta architecto deleniti ratione distinctio delectus, enim amet
+              expedita asperiores.
             </p>
           </div>
           <Link to="/comprar">
@@ -42,7 +46,11 @@ export default function Planos() {
             <h2 class="display-5 textos">Plano Intermediário</h2>
             <p class="lead textos paragrafos">
               Adquire e ganhe acesso gratuito ao módulo básico para relembrar
-              conceitos sempre que precisar. Let's Go!
+              conceitos sempre que precisar. Let's Go! Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Repellendus voluptate natus ad
+              quibusdam voluptas nostrum ipsa. Maiores amet hic deserunt aliquam
+              molestias, libero sint veniam? Iusto voluptate consequatur
+              reiciendis omnis.
             </p>
           </div>
           <Link to="/comprar">
@@ -58,7 +66,10 @@ export default function Planos() {
             <h2 class="display-5 textos">Plano Básico</h2>
             <p class="lead textos paragrafos">
               Comece agora e concorra a bolsas de estudos exclusivas e
-              personalizadas.
+              personalizadas. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Explicabo, rerum. Voluptatibus nesciunt totam ut. Cupiditate
+              provident obcaecati natus. Error praesentium enim corporis porro
+              quasi. Quibusdam inventore adipisci ab. Placeat, voluptatum?
             </p>
           </div>
         </div>

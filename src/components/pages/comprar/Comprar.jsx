@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import Menu from "../../molecules/Menu";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 
@@ -174,6 +175,7 @@ function PricingContent() {
           ))}
         </Grid>
       </Container>
+     
       
     </React.Fragment>
    
