@@ -4,6 +4,7 @@ import Menu from "../../molecules/Menu";
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
+import { maxWidth } from "@mui/system";
 
 
 export default function Sobre() {
@@ -19,8 +20,9 @@ export default function Sobre() {
         zIndex: "20",
         position: "absolute",
         marginTop: "-430px",
-        marginLeft: "50px"}}
-      > Quero colocar esse elemento dentro do Box, na frente </h1>
+        marginLeft: "50px",
+        maxWidth: "1000px"}}
+      > Quero colocar esse elemento dentro do Box, na frente testando mais palavras para ver se vai ultrapassar o box</h1>
     </Container>
   </React.Fragment>
 
