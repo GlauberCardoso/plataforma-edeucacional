@@ -191,16 +191,3 @@ section#contact form {
     scale: 95%;
 }
 
-footer {
-    background-color: rgb(23, 24, 70);
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-    position: relative;
-    margin-top: 100px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}

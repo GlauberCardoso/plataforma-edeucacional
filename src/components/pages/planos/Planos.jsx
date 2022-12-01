@@ -7,9 +7,9 @@ import Footer from "../../molecules/Footer";
 export default function Planos() {
   return (
     <>
-      <Menu />
-
-      <div class="position-relative overflow-hidden p-5 p-md-5 m-md-3 text-center div-intercambio">
+    
+    <Menu />
+      <div class="position-relative overflow-hidden p-5 p-md-8 m-md-8 text-center div-intercambio">
         <div class="intercambio col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 fw-normal textos">Intercâmbio</h1>
           <p class="lead fw-normal textos paragrafos">
@@ -24,8 +24,8 @@ export default function Planos() {
         </div>
       </div>
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="div-avancado me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-10">
+        <div class="div-avancado me-md-3 pt-3 px-3 pt-md-5 px-md-10 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5 textos">Plano Avançado</h2>
             <p class="lead textos paragrafos">
@@ -42,7 +42,7 @@ export default function Planos() {
             <div class="img-avancado shadow-sm mx-auto"></div>
           </Link>
         </div>
-        <div class="div-intermediario me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="div-intermediario me-md-10 pt-3 px-3 pt-md-5 px-md-10 text-center overflow-hidden">
           <div class="my-3 p-3">
             <h2 class="display-5 textos">Plano Intermediário</h2>
             <p class="lead textos paragrafos">
@@ -60,8 +60,8 @@ export default function Planos() {
         </div>
       </div>
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="div-basico me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="d-md-flex flex-md-equal w-100 my-md-10 ps-md-10">
+        <div class="div-basico me-md-10 pt-10 px-10 pt-md-3 px-md-3 text-center overflow-hidden">
           ={" "}
           <div class="my-3 p-6">
             <h2 class="display-5 textos">Plano Básico</h2>

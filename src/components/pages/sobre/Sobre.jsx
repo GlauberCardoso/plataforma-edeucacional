@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../../atoms/Background";
+
 import Menu from "../../molecules/Menu";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,16 +10,14 @@ import styled from "styled-components";
 const Title = styled.h3`
   font-size: 1.5em;
   text-align: center;
-  color: white;
+  color: #171846;
   font-weight: 600;
-  text-shadow: black 0.2em 0.2em 0.2em;
 `;
 
 const Paragraph = styled.p`
   font-size: 1.3em;
-  color: white;
+  color: #171846;
   font-weight: 500;
-  text-shadow: black 0.2em 0.2em 0.2em;
 `;
 
 export default function Sobre() {
@@ -27,7 +25,7 @@ export default function Sobre() {
     <>
       <React.Fragment>
         <CssBaseline />
-        <Background />
+
         <Menu />
 
         <Container fixed>
@@ -58,7 +56,7 @@ export default function Sobre() {
                 iste quae sunt illo? Dolorum asperiores exercitationem sequi.
                 Excepturi atque, ipsa ratione quia inventore qui, ab doloremque
                 nulla nihil iusto consectetur!
-                </Paragraph>
+              </Paragraph>
               <Title>Valores</Title>
               <Paragraph>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -67,7 +65,7 @@ export default function Sobre() {
                 commodi voluptatibus corporis dolorum expedita totam aut. Soluta
                 nulla dolor, saepe repellat animi modi doloribus, perferendis
                 culpa consequatur, architecto ut dolorem!
-                </Paragraph>
+              </Paragraph>
             </div>
           </Box>
         </Container>
