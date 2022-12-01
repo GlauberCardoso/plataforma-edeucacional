@@ -45,19 +45,19 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link to="/" class="nav-link">
+                  <a href='#depoimentos' class="nav-link">
                     Depoimentos
-                  </Link>
+                  </a>
                 </li>
                 <li class="nav-item">
-                <Link to="/" class="nav-link">
+                <a href="#faq" class="nav-link">
                     FAQ
-                  </Link>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <Link to="/" class="nav-link">
+                  <a href="#contato" class="nav-link">
                     Contato
-                  </Link>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <Link to="/login" class="nav-link acessar">
