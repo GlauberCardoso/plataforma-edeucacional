@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "../../molecules/Menu";
 
 import { Link } from "react-router-dom";
+import Footer from "../../molecules/Footer";
 
 export default function Planos() {
   return (
@@ -62,7 +63,7 @@ export default function Planos() {
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="div-basico me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           ={" "}
-          <div class="my-3 p-3">
+          <div class="my-3 p-6">
             <h2 class="display-5 textos">Plano Básico</h2>
             <p class="lead textos paragrafos">
               Comece agora e concorra a bolsas de estudos exclusivas e
@@ -73,6 +74,10 @@ export default function Planos() {
             </p>
           </div>
         </div>
+        
+      </div>
+      <div>
+      <Footer />
       </div>
     </>
   );

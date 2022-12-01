@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Menu from "../../molecules/Menu";
 import TextField from '@mui/material/TextField';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
+import Footer from "../../molecules/Footer";
 
 
 import video from "../../../assets/videos/video-body.mp4";
@@ -206,9 +207,7 @@ export default function Home() {
                 </div>
         </form>
     </section>
-    <footer>
-        Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
-    </footer>
+    <Footer />
     </>
   );
 }
