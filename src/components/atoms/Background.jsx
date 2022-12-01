@@ -1,9 +1,17 @@
 import React from "react";
 import img from "../pages/sobre/style/sunshine.jpg";
+import style from 'styled-components';
+
+const BackgroundWrapper = style.div`
+  
+  @media (max-width: 768px) {
+    background-image: none;
+  }
+`;
 
 const Background = () => {
   return (
-    <div>
+    <BackgroundWrapper>
       <img
         style={{
           zIndex: "-20",
@@ -13,11 +21,12 @@ const Background = () => {
           height: "100%",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
+         
         }}
         src={img}
         alt="Céu em tons de laranja"
       />
-    </div>
+    </BackgroundWrapper>
   );
 };
 
