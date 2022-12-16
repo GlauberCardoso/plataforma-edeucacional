@@ -52,6 +52,10 @@ const Title = styled.h1`
   font-weight: 500;
 `
 
+const DivStyle = styled.div`
+   margin-top: 17vh;
+`;
+
 
   return (
     <>
@@ -215,7 +219,10 @@ const Title = styled.h1`
           </Container>
           
         </ThemeProvider>
+
+        <DivStyle>
         <Footer/>
+        </DivStyle>
         
     </>
   );
