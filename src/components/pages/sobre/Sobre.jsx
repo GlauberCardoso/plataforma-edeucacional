@@ -3,7 +3,6 @@ import React from "react";
 import Menu from "../../molecules/Menu";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
 import Footer from "../../molecules/Footer";
 import styled from "styled-components";
 
@@ -18,8 +17,12 @@ const Paragraph = styled.p`
   font-size: 1.3em;
   color: #171846;
   font-weight: 500;
+  padding: 1em;
 `;
 
+const DivStyle = styled.div`
+   margin-top: 17vh;
+`;
 
 
 export default function Sobre() {
@@ -28,20 +31,13 @@ export default function Sobre() {
       <React.Fragment>
         <CssBaseline />
 
-        <Menu />
+        
 
-        <Container fixed>
-          <Box
-            mt={5}
-            sx={{
-              marginTop: "5.0em",
-              height: "80vh",
-              borderRadius: "3%",
-              padding: "2rem",
-              
-            }}
-          >
-            <div>
+          <Menu />
+          <Container fixed>
+          
+         
+              <DivStyle>
               <Title>Missão</Title>
               <Paragraph>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -69,11 +65,14 @@ export default function Sobre() {
                 nulla dolor, saepe repellat animi modi doloribus, perferendis
                 culpa consequatur, architecto ut dolorem!
               </Paragraph>
-            </div>
-          </Box>
+            
+              </DivStyle>     
         </Container>
+        
       </React.Fragment>
+     <DivStyle>
      <Footer />
+     </DivStyle>
     </>
   );
 }
