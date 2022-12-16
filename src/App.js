@@ -10,7 +10,7 @@ import Cadastro from "./components/pages/cadastro/Cadastro";
 import Comprar from "./components/pages/comprar/Comprar";
 import Sobre from "./components/pages/sobre/Sobre";
 
-import MenuLearning from "./components-learning/molecules/MenuLearning";
+import HomeTwo from "./components-learning/pages/HomeTwo";
 
 
 import "./components/molecules/menu.css";
@@ -33,7 +33,7 @@ function App() {
         <Route path="/comprar" element={<Comprar  />} />
         <Route path="/sobre" element={<Sobre />}/>
 
-        <Route path="/learning" element={<MenuLearning />}/>
+        <Route path="/learning" element={<HomeTwo />}/>
 
         
         
