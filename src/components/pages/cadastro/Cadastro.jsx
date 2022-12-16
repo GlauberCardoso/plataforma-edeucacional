@@ -215,7 +215,7 @@ const Title = styled.h1`
           </Container>
           
         </ThemeProvider>
-        <Footer />
+        <Footer/>
         
     </>
   );

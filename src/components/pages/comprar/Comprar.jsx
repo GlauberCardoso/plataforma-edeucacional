@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import Menu from "../../molecules/Menu";
-import Background from "../../atoms/Background";
+
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "../../molecules/Footer";
@@ -22,11 +22,11 @@ import Footer from "../../molecules/Footer";
 const theme = createTheme({
   palette: {
     primary: {
-      // Purple and green play nicely together.
+      
       main: "#171846",
     },
     secondary: {
-      // This is green.A700 as hex.
+      
       main: "#FF7D00",
     },
   },
@@ -82,12 +82,12 @@ function PricingContent() {
     
     <React.Fragment >
       <GlobalStyles
-        styles={{ ul: { margin: 0, padding: 0, listStyle: "none"} }}
+        styles={{ ul: { margin: 0, padding: 0, listStyle: "none"}}}
       />
       <CssBaseline />
       <Menu />
 
-      <Background/>
+      
       <Container
         disableGutters
         maxWidth="sm"
@@ -98,7 +98,7 @@ function PricingContent() {
           component="h3"
           variant="h3"
           align="center"
-          color="white"
+          color="#171846"
           gutterBottom
           sx={{textShadow:'black 0.2em 0.2em 0.2em;'}}
         >

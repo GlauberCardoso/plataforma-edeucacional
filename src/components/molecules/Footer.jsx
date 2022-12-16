@@ -7,8 +7,8 @@ color: white;
 text-align: center;
 padding: 0.5rem 0rem;
 position: relative;
-margin-bottom: 0rem;
-margin-top: 5rem;
+margin-bottom: 0vh;
+margin-top: 1rem;
 `;
 
 const Git = styled.a`

@@ -20,6 +20,8 @@ const Paragraph = styled.p`
   font-weight: 500;
 `;
 
+
+
 export default function Sobre() {
   return (
     <>
@@ -32,10 +34,11 @@ export default function Sobre() {
           <Box
             mt={5}
             sx={{
-              marginTop: "5.5em",
+              marginTop: "5.0em",
               height: "80vh",
               borderRadius: "3%",
               padding: "2rem",
+              
             }}
           >
             <div>
@@ -70,7 +73,7 @@ export default function Sobre() {
           </Box>
         </Container>
       </React.Fragment>
-      <Footer />
+     <Footer />
     </>
   );
 }
