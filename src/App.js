@@ -10,6 +10,8 @@ import Cadastro from "./components/pages/cadastro/Cadastro";
 import Comprar from "./components/pages/comprar/Comprar";
 import Sobre from "./components/pages/sobre/Sobre";
 
+import MenuLearning from "./components-learning/molecules/MenuLearning";
+
 
 import "./components/molecules/menu.css";
 import "./components/pages/home/style/home.css";
@@ -30,6 +32,10 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/comprar" element={<Comprar  />} />
         <Route path="/sobre" element={<Sobre />}/>
+
+        <Route path="/learning" element={<MenuLearning />}/>
+
+        
         
       </Routes>
     </BrowserRouter>
