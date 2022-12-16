@@ -16,7 +16,7 @@ import Menu from "../../molecules/Menu";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "../../molecules/Footer";
-
+import styled from 'styled-components';
 
 
 const theme = createTheme({
@@ -74,6 +74,11 @@ const tiers = [
     buttonVariant: "outlined",
   },
 ];
+
+const DivStyle = styled.div`
+   margin-bottom: 0vh; 
+   margin-top: 21vh;
+`;
 
 
 
@@ -178,8 +183,9 @@ function PricingContent() {
           ))}
         </Grid>
       </Container>
-     
+      <DivStyle>
       <Footer /> 
+      </DivStyle>
     </React.Fragment>
     
   );
