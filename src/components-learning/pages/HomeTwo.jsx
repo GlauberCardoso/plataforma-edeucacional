@@ -6,23 +6,40 @@ import CardAdvanced from "../molecules/CardAdvanced";
 import Footer from "../../components/molecules/Footer";
 import styled from "styled-components";
 
-const DivStile = styled.div`
+const DivStyle = styled.div`
 
 display: flex;
 justify-content: space-around; 
-margin-top: 20vh;
+margin: 2rem;
+
+@media screen and (min-width: 281px) and (max-width: 440px){
+  flex-direction:column;
+  margin: 2em;
+  
+}
 `;
 
+const DivStyleTwo = styled.div`
+display: flex;
+justify-content:flex-start;
+padding:1rem;
+margin-top: 7rem;
+
+
+`
 
 export default function Home() {
   return (
     <>
       <MenuLearning />
-      <DivStile>
+      <DivStyleTwo>
+        <h3>OLÁ ALUNO (A), <strong>SEUS CURSOS</strong></h3>
+      </DivStyleTwo>
+      <DivStyle>
       <CardBasic/>
       <CardIntermediary/>
       <CardAdvanced/>
-      </DivStile>
+      </DivStyle>
       <Footer/>
     </>
   );
