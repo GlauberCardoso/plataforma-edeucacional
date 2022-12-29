@@ -55,7 +55,7 @@ export default function Menu() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contato" class="nav-link">
+                  <a href="#contact" class="nav-link">
                     Contato
                   </a>
                 </li>
