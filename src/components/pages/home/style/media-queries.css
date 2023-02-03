@@ -1,4 +1,4 @@
-@media screen and (max-width: 280px) {
+/*@media screen and (max-width: 280px) {
     .marketing-titulo {
         font-size: 12px;
     }
@@ -75,3 +75,151 @@
         margin-top: 150px;
     }
 }
+*/
+
+
+/* Melhorando a Responsividade */
+
+/* Small devices (mobile) */
+@media (max-width: 576px) {
+    /* CSS styles for small devices here */
+    .logo {
+        width: 10rem;
+        background-size: cover;
+    }
+
+    video {
+        display: none;
+    }
+
+    .video-banner .marketing-description {
+        background-image: url(../../../../assets/img/image-man-full-opacidade.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100vw;
+        top: auto;
+        padding-top: 50px;
+    }
+
+    .marketing-subtitulo {
+        max-width: 75%;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 100px;
+    }
+    
+    .cadastre-se > a > p{
+        position: relative;
+        padding: 10px 10px;
+        margin: 0px 50px;
+        text-align: center;
+        bottom: 100px;
+        font-size: 14px;
+    }
+
+    section#depoimentos {
+        padding-top: 500px;
+        font-size: 10px;
+    }
+
+    .carousel-item {
+        margin-block: 70px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: #FF7D00;
+        padding: 15px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    section#depoimentos img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #faq {
+        padding-top: 300px;
+        font-size: 10px;
+    }
+
+    #faq .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    section#contact form {
+        max-width: 2px;
+        height: auto;
+    }
+
+    section#contact {
+        margin: 0px 5px;
+    }
+
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    label#outlined-basic-label.MuiFormLabel-root {
+        top: -10px;
+    }
+
+    #outlined-basic {
+        max-width: 280px;
+    }
+
+    textarea#outlined-basic {
+        max-width: 307px;
+    }
+
+    #contact form select {
+        max-width: 307px;
+    }
+
+    label {
+        width: 280px;
+        margin: 10px 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+    }
+
+    .enviar-formulario > button {
+        max-width: 280px;
+        padding: 3px 25px;
+    }
+
+    .hceOkw {
+        font-size: 10px;
+    }
+
+  }
+  
+  /* Small desktop devices */
+  @media (min-width: 576px) and (max-width: 768px) {
+    /* CSS styles for small desktop devices here */
+  }
+  
+  /* Medium desktop devices */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* CSS styles for medium desktop devices here */
+  }
+  
+  /* Large desktop devices */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* CSS styles for large desktop devices here */
+  }
+  
+  /* Extra large desktop devices */
+  @media (min-width: 1200px) {
+    /* CSS styles for extra large desktop devices here */
+  }
+  

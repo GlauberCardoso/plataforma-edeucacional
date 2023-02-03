@@ -109,8 +109,13 @@ section#depoimentos img {
     border: none;
 }
 
+.accordion {
+    --bs-accordion-border-color: none;
+}
+
 .accordion-button::after {
     background-image: url('../../../../assets/img/arrow-down.png');
+    padding: 15px;
 }
 
 .accordion-button:focus {
@@ -190,4 +195,3 @@ section#contact form {
     background-color: #ff7b00b2;
     scale: 95%;
 }
-

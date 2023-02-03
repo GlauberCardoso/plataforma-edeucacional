@@ -15,10 +15,9 @@ import HomeTwo from "./components-learning/pages/HomeTwo";
 
 import "./components/molecules/menu.css";
 import "./components/pages/home/style/home.css";
+import "./components/pages/home/style/media-queries.css";
 import "./components/pages/planos/style/planos.css";
 import "./components/pages/cadastro/cadastro.css";
-import "./components/pages/home/style/media-queries.css";
-
 
 
 function App() {

@@ -55,7 +55,7 @@ export default function Menu() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link">
+                  <a href="#contact" class="nav-link"> scrollReact (Scroll to) Pesquisar na biblioteca do React
                     Contato
                   </a>
                 </li>

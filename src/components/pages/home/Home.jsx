@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Menu />
       
-      <section>
+      <section className="video">
         <div className="video-banner">
             <video width="100%" height="800px" autoPlay muted preload="auto" loop>
               <source src={video} type="video/mp4" />
@@ -36,8 +36,8 @@ export default function Home() {
               Estude de onde estiver, 100% Digital.
             </h1>
             <p className="marketing-subtitulo">
-              Com a MGM English você pode mais. <br />
-              Estude no seu ritmo.
+              Com a MGM English você pode muito mais. <br />
+              Estude no seu ritmo!
             </p>
             <div className="video-banner cadastre-se">
               <Link to="/cadastro">
@@ -87,7 +87,7 @@ export default function Home() {
     <section id="faq">
       <h1 data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000">Perguntas Frequentes.</h1>
+      data-aos-duration="2000">Perguntas Frequentes</h1>
       <div class="accordion" id="accordionExample">
 
         <div class="accordion-item">
@@ -198,12 +198,14 @@ export default function Home() {
                 </select>
             </p>
             <p>
-                <input type="checkbox" name="check" id="termo-privacidade" required /> <span> </span>
-                <label for="termo-privacidade">Li e concordo com a <Link to="/">Termos e Condições</Link> e <Link to="/">Política de Privacidade</Link></label><br/>
+                <div class="checkbox">
+                  <input type="checkbox" name="check" id="termo-privacidade" required />
+                  <label for="termo-privacidade">Li e concordo com a <Link to="/">Termos e Condições</Link> e <Link to="/">Política de Privacidade</Link></label><br/>
+                </div>
             </p>
             <p></p>
                 <div class="enviar-formulario">
-                    <button type="submit">Enviar formulário</button>
+                    <button type="submit">Enviar</button>
                 </div>
         </form>
     </section>
