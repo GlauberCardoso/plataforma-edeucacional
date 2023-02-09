@@ -1,88 +1,6 @@
-/*@media screen and (max-width: 280px) {
-    .marketing-titulo {
-        font-size: 12px;
-    }
-
-    .marketing-subtitulo {
-        font-size: 12px;
-    }
-    
-    .cadastre-se > a > p {
-        font-size: 12px;
-        padding: 5px 50px;
-        margin: 2px 20px;
-    }
-}
-
-@media screen and (min-width: 281px) and (max-width: 440px) {
-    .marketing-titulo {
-        font-size: 12px;
-    }
-
-    .marketing-subtitulo {
-        font-size: 12px;
-    }
-    
-    .cadastre-se > a > p {
-        font-size: 12px;
-        padding: 5px 50px;
-        margin: 2px 20px;
-    }
-}
-
-@media screen and (min-width: 441px) and (max-width: 740px) {
-    .marketing-titulo {
-        margin-top: 50px;
-        font-size: 16px;
-    }
-
-    .marketing-subtitulo {
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    
-    .cadastre-se > a > p {
-        padding: 10px 70px;
-        margin: 20px 10px;
-    }
-}
-
-@media screen and (min-width: 741px) and (max-width: 1000px) {
-    .marketing-titulo {
-        margin-top: 50px;
-    }
-
-    .marketing-subtitulo {
-        margin-top: 10px;
-    }
-    
-    .cadastre-se > a > p {
-        padding: 10px 70px;
-        margin-top: 120px;
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 2080px) {
-    .marketing-titulo {
-        margin-top: 50px;
-    }
-
-    .marketing-subtitulo {
-        margin-top: 50px;
-    }
-    
-    .cadastre-se > a > p {
-        margin-top: 150px;
-    }
-}
-*/
-
-
-/* Melhorando a Responsividade */
-
 /* Small devices (mobile) */
 @media (max-width: 576px) {
-    /* CSS styles for small devices here */
+    
     .logo {
         width: 10rem;
         background-size: cover;
@@ -93,23 +11,28 @@
     }
 
     .video-banner .marketing-description {
-        background-image: url(../../../../assets/img/image-man-full-opacidade.png);
+        background-image: url(../../../../assets/img/image-man-full-opacidade.jpeg);
         background-size: cover;
         background-position: center;
         height: auto;
-        width: 100vw;
+        width: 100%;
         top: auto;
         padding-top: 50px;
     }
 
+    .marketing-titulo {
+        max-width: 60%;
+    }
+
     .marketing-subtitulo {
-        max-width: 75%;
+        max-width: 60%;
         font-size: 20px;
         font-weight: bold;
         padding-bottom: 100px;
     }
     
-    .cadastre-se > a > p{
+    .cadastre-se > a > p {
+        max-width: 50%;
         position: relative;
         padding: 10px 10px;
         margin: 0px 50px;
@@ -118,9 +41,18 @@
         font-size: 14px;
     }
 
+    .cadastre-se > a {
+        text-decoration: none;
+    }
+
     section#depoimentos {
+        height: 880px;
         padding-top: 500px;
         font-size: 10px;
+    }
+
+    section#depoimentos > h1 {
+        padding-top: 180px;
     }
 
     .carousel-item {
@@ -205,21 +137,555 @@
   
   /* Small desktop devices */
   @media (min-width: 576px) and (max-width: 768px) {
-    /* CSS styles for small desktop devices here */
+
+    .logo {
+        width: 12rem;
+        background-size: cover;
+    }
+
+    video {
+        display: none;
+    }
+
+    .video-banner .marketing-description {
+        background-image: url(../../../../assets/img/image-man-full-opacidade.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+        top: auto;
+        padding-top: 50px;
+        max-width: 100%;
+    }
+
+    .marketing-titulo {
+        max-width: 75%;
+    }
+
+    .marketing-subtitulo {
+        max-width: 75%;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 100px;
+    }
+    
+    .cadastre-se > a > p {
+        max-width: 40%;
+        position: relative;
+        padding: 10px;
+        margin-right: 250px;
+        margin-left: 50px;
+        text-align: center;
+        bottom: 50px;
+        font-size: 14px;
+    }
+
+    .cadastre-se > a {
+        text-decoration: none;
+    }
+
+    section#depoimentos {
+        height: 880px;
+        padding-top: 300px;
+        font-size: 10px;
+    }
+
+    section#depoimentos > h1 {
+        padding-top: 390px;
+    }
+
+    .carousel-item {
+        margin-block: 70px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: #FF7D00;
+        padding: 15px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    section#depoimentos img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #faq {
+        padding-top: 500px;
+        font-size: 10px;
+    }
+
+    #faq .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    section#contact form {
+        max-width: 75%;
+        height: auto;
+    }
+
+    section#contact {
+        margin: 0px 30px;
+    }
+
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    label#outlined-basic-label.MuiFormLabel-root {
+        top: -10px;
+    }
+
+    #outlined-basic {
+        max-width: 380px;
+    }
+
+    textarea#outlined-basic {
+        max-width: 307px;
+    }
+
+    #contact form select {
+        max-width: 380px;
+    }
+
+    label {
+        width: 280px;
+        margin: 10px 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+    }
+
+    .enviar-formulario > button {
+        max-width: 280px;
+        padding: 3px 25px;
+    }
+
   }
   
   /* Medium desktop devices */
   @media (min-width: 768px) and (max-width: 992px) {
-    /* CSS styles for medium desktop devices here */
+
+    .logo {
+        width: 12rem;
+        background-size: cover;
+    }
+
+    video {
+        display: none;
+    }
+
+    .video-banner .marketing-description {
+        background-image: url(../../../../assets/img/image-man-full-opacidade.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+        top: auto;
+        padding-top: 50px;
+        max-width: 100%;
+    }
+
+    .marketing-titulo {
+        max-width: 75%;
+    }
+
+    .marketing-subtitulo {
+        max-width: 75%;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 100px;
+    }
+    
+    .cadastre-se > a > p {
+        max-width: 40%;
+        position: relative;
+        padding: 10px;
+        margin-right: 250px;
+        margin-left: 50px;
+        text-align: center;
+        bottom: 50px;
+        font-size: 14px;
+    }
+
+    .cadastre-se > a {
+        text-decoration: none;
+    }
+
+    section#depoimentos {
+        height: 880px;
+        padding-top: 300px;
+        font-size: 10px;
+    }
+
+    section#depoimentos > h1 {
+        padding-top: 390px;
+    }
+
+    .carousel-item {
+        margin-block: 70px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: #FF7D00;
+        padding: 15px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    section#depoimentos img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #faq {
+        padding-top: 500px;
+        font-size: 10px;
+    }
+
+    #faq .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    section#contact form {
+        max-width: 75%;
+        height: auto;
+    }
+
+    section#contact {
+        margin: 0px 30px;
+    }
+
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    label#outlined-basic-label.MuiFormLabel-root {
+        top: -10px;
+    }
+
+    #outlined-basic {
+        max-width: 380px;
+    }
+
+    textarea#outlined-basic {
+        max-width: 307px;
+    }
+
+    #contact form select {
+        max-width: 380px;
+    }
+
+    label {
+        width: 280px;
+        margin: 10px 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+    }
+
+    .enviar-formulario > button {
+        max-width: 280px;
+        padding: 3px 25px;
+    }
+
   }
   
   /* Large desktop devices */
   @media (min-width: 992px) and (max-width: 1200px) {
-    /* CSS styles for large desktop devices here */
+
+    .logo {
+        width: 12rem;
+        background-size: cover;
+    }
+
+    video {
+        display: none;
+    }
+
+    .video-banner .marketing-description {
+        background-image: url(../../../../assets/img/image-man-full-opacidade.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+        top: auto;
+        padding-top: 50px;
+        max-width: 100%;
+    }
+
+    .marketing-titulo {
+        max-width: 75%;
+    }
+
+    .marketing-subtitulo {
+        max-width: 75%;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 100px;
+    }
+    
+    .cadastre-se > a > p {
+        max-width: 40%;
+        position: relative;
+        padding: 10px;
+        margin-right: 250px;
+        margin-left: 50px;
+        text-align: center;
+        bottom: 50px;
+        font-size: 14px;
+    }
+
+    .cadastre-se > a {
+        text-decoration: none;
+    }
+
+    section#depoimentos {
+        height: 880px;
+        padding-top: 300px;
+        font-size: 10px;
+    }
+
+    section#depoimentos > h1 {
+        padding-top: 390px;
+    }
+
+    .carousel-item {
+        margin-block: 70px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: #FF7D00;
+        padding: 15px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    section#depoimentos img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #faq {
+        padding-top: 500px;
+        font-size: 10px;
+    }
+
+    #faq .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    section#contact form {
+        max-width: 75%;
+        height: auto;
+    }
+
+    section#contact {
+        margin: 0px 30px;
+    }
+
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    label#outlined-basic-label.MuiFormLabel-root {
+        top: -10px;
+    }
+
+    #outlined-basic {
+        max-width: 380px;
+    }
+
+    textarea#outlined-basic {
+        max-width: 307px;
+    }
+
+    #contact form select {
+        max-width: 380px;
+    }
+
+    label {
+        width: 280px;
+        margin: 10px 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+    }
+
+    .enviar-formulario > button {
+        max-width: 280px;
+        padding: 3px 25px;
+    }
+
   }
-  
-  /* Extra large desktop devices */
-  @media (min-width: 1200px) {
-    /* CSS styles for extra large desktop devices here */
+
+  @media (min-width: 1201px) {
+
+    .logo {
+        width: 15rem;
+        background-size: cover;
+    }
+
+    .video-banner {
+        margin-top: 0px;
+    }
+
+    .video-banner .marketing-description {
+        position: absolute;
+        background-color: rgba(55, 118, 201, 0.514);
+        color: white;
+        max-width: 100%;
+        height: auto;
+        top: 70px;
+        padding-top: 100px;
+    }
+
+    .marketing-titulo {
+        max-width: 75%;
+    }
+
+    .marketing-subtitulo {
+        max-width: 75%;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 100px;
+    }
+    
+    .cadastre-se > a > p {
+        max-width: 40%;
+        position: relative;
+        padding: 10px;
+        margin-right: 250px;
+        margin-left: 50px;
+        margin-bottom: 160px;
+        text-align: center;
+        bottom: 20px;
+        font-size: 14px;
+    }
+
+    .cadastre-se > a {
+        text-decoration: none;
+    }
+
+    section#depoimentos {
+        margin-top: -73px;
+        height: 580px;
+        font-size: 10px;
+    }
+
+    section#depoimentos > h1 {
+        padding-top: 390px;
+    }
+
+    .carousel-item {
+        margin-block: 70px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: #FF7D00;
+        padding: 15px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    section#depoimentos img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #faq {
+        padding-top: 500px;
+        font-size: 10px;
+    }
+
+    #faq .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    section#contact form {
+        max-width: 75%;
+        height: auto;
+    }
+
+    section#contact {
+        margin: 0px 30px;
+    }
+
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    label#outlined-basic-label.MuiFormLabel-root {
+        top: -10px;
+    }
+
+    #outlined-basic {
+        max-width: 580px;
+    }
+
+    textarea#outlined-basic {
+        max-width: 307px;
+    }
+
+    #contact form select {
+        max-width: 380px;
+    }
+
+    label {
+        width: 280px;
+        margin: 10px 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
+
+    .enviar-formulario > button {
+        max-width: 280px;
+        padding: 3px 25px;
+    }
   }
   

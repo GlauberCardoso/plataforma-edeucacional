@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import LogoFundoAzul from "../../assets/logo/logo-fundo-azul.PNG";
+import LogoFundoAzul from "../../assets/logo/logo-fundo-azul.jpeg";
 
 export default function Menu() {
   return (
@@ -55,7 +55,7 @@ export default function Menu() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link"> scrollReact (Scroll to) Pesquisar na biblioteca do React
+                  <a href="#contact" class="nav-link">
                     Contato
                   </a>
                 </li>
