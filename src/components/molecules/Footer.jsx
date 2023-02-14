@@ -20,11 +20,11 @@ export default function Footer() {
   return (
     <FooterStyle>
       <div>
-      Aplicação desenvolvida por{" "}
+      Desenvolvido por{" "}
       <Git href="https://github.com/GlauberCardoso">Glauber</Git> e{" "}
       <Git href="https://github.com/JessanyKaline">Jessany</Git> {" "}
        - Projeto da Escola{" "}
-      <Git href="https://http://somostera.com/">TERA</Git> - Plataforma Educacional.
+      <Git href="https://http://somostera.com/">TERA</Git>.
       </div>
     </FooterStyle>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import LogoFundoAzul from "../../assets/logo/logo-fundo-azul.PNG";
+import LogoFundoAzul from "../../assets/logo/logo-fundo-azul.jpeg";
 
 export default function Menu() {
   return (
