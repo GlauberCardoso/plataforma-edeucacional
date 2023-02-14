@@ -9,6 +9,7 @@ import Planos from "./components/pages/planos/Planos";
 import Cadastro from "./components/pages/cadastro/Cadastro";
 import Comprar from "./components/pages/comprar/Comprar";
 import Sobre from "./components/pages/sobre/Sobre";
+import Confirmacao from "./components/pages/cadastro/Confirmacao";
 
 import HomeTwo from "./components-learning/pages/HomeTwo";
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/comprar" element={<Comprar  />} />
         <Route path="/sobre" element={<Sobre />}/>
+        <Route path="/confirmacao" element={<Confirmacao />}/>
 
         <Route path="/learning" element={<HomeTwo />}/>
 

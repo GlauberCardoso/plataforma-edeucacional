@@ -104,8 +104,11 @@ export default function SignUp() {
       (err, data) => {
         if (err) {
           console.error(err);
+        }else{
+          alert("Usuário criado com sucesso!")
+
         }
-        console.log(data);
+        
       }
     );
   };
