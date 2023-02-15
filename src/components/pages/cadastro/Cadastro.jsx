@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -30,6 +30,7 @@ export default function SignUp() {
   const [bairro, setBairro] = React.useState();
   const [cidade, setCidade] = React.useState();
   const [uf, setUf] = React.useState();
+
 
   React.useEffect((props) => {
     fetch(`https:viacep.com.br/ws/${cep}/json/`)
@@ -105,8 +106,8 @@ export default function SignUp() {
         if (err) {
           console.error(err);
         }else{
-          alert("Usuário criado com sucesso!")
-
+          alert("deu certo")
+          window.location.href = "/login"
         }
         
       }
@@ -303,4 +304,3 @@ export default function SignUp() {
     </>
   );
 }
-*/

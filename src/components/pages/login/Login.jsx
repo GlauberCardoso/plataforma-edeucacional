@@ -9,22 +9,52 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+
 
 import background from "./style/backgroundmedium.jpg";
 import Menu from "../../molecules/Menu";
 import styled from "styled-components";
 import Footer from "../../molecules/Footer";
 
+import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
+import UserPool from "../cadastro/UserPool";
+
 const theme = createTheme();
 
 export default function SignInSide() {
-  const handleSubmit = (event) => {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  
+  
+
+  const onSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
+
+    const user = new CognitoUser({
+      Username: email,
+      Pool: UserPool,
+    });
+
+    const authDetails = new AuthenticationDetails({
+      Username: email,
+      Password: password,
+    });
+
+    user.authenticateUser(authDetails, {
+      onSuccess: (data) => {
+        console.log("onSuccess: ", data);
+        alert("Usuário Logado")
+        
+        
+      },
+      onFailure: (err) => {
+        console.error("onFailure: ", err);
+        alert("Usuário ou senha inválidos!");
+      },
+      newPasswordRequired: (data) => {
+        console.log("newPasswordRequired: ", data);
+      },
     });
   };
 
@@ -68,12 +98,7 @@ export default function SignInSide() {
             <Typography component="h3" variant="h4" sx={{ marginTop: 8 }}>
               <Title>Login</Title>
             </Typography>
-            <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 5 }}
-            >
+            <Box component="form" noValidate sx={{ mt: 5 }} onSubmit={onSubmit}>
               <TextField
                 margin="normal"
                 required
@@ -81,7 +106,8 @@ export default function SignInSide() {
                 id="email"
                 label="E-mail"
                 name="email"
-                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 autoFocus
               />
               <TextField
@@ -92,23 +118,25 @@ export default function SignInSide() {
                 label="Senha"
                 type="password"
                 id="password"
-                autoComplete="current-password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Salvar"
               />
-              <Link to="/learning" variant="body2" className="nav-link ">
-                <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  sx={{ mt: 3, mb: 2 }}
-                  className="button-cadastro nav-link"
-                >
-                  {"LOGIN"}
-                </Button>
-              </Link>
+
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+                className="button-cadastro nav-link"
+              >
+                {"LOGIN"}
+              </Button>
+              
+
               <Grid container>
                 <Grid item xs>
                   <Link
@@ -127,6 +155,11 @@ export default function SignInSide() {
                   >
                     {"Cadastra-se"}
                   </Link>
+
+                  
+
+
+                  
                 </Grid>
               </Grid>
             </Box>
