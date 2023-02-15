@@ -563,37 +563,40 @@
         margin-top: 0px;
     }
 
-    .video-banner .marketing-description {
-        position: absolute;
-        background-color: rgba(55, 118, 201, 0.514);
-        color: white;
-        max-width: 100%;
+    video {
+        width: 100%;
         height: auto;
+    }
+
+    .video-banner .marketing-description {
+        background-color: rgba(55, 118, 201, 0);
+        color: white;
         top: 70px;
         padding-top: 100px;
+        margin-left: 100px;
     }
 
     .marketing-titulo {
-        max-width: 75%;
+        max-width: 100%;
+        font-size: 30px;
     }
 
     .marketing-subtitulo {
         max-width: 75%;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         padding-bottom: 100px;
     }
     
     .cadastre-se > a > p {
-        max-width: 40%;
         position: relative;
-        padding: 10px;
-        margin-right: 250px;
-        margin-left: 50px;
+        padding: 15px;
+        margin-right: 150px;
+        margin-left: 10px;
         margin-bottom: 160px;
         text-align: center;
         bottom: 20px;
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .cadastre-se > a {
