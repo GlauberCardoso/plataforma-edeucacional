@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "../../molecules/Menu";
+import CodigoVerificar from "../../molecules/CodigoVerificar";
 
 import Footer from "../../molecules/Footer";
 import styled from "styled-components";
@@ -30,18 +31,21 @@ export default function SignUp() {
   const [bairro, setBairro] = React.useState();
   const [cidade, setCidade] = React.useState();
   const [uf, setUf] = React.useState();
+  const [visivel, setVisivel] = React.useState(false);
 
-
-  React.useEffect((props) => {
-    fetch(`https:viacep.com.br/ws/${cep}/json/`)
-      .then((response) => response.json())
-      .then((data) => {
-        setEndereco(data.logradouro);
-        setBairro(data.bairro);
-        setCidade(data.localidade);
-        setUf(data.uf);
-      });
-  });
+  React.useEffect(
+    (props) => {
+      fetch(`https:viacep.com.br/ws/${cep}/json/`)
+        .then((response) => response.json())
+        .then((data) => {
+          setEndereco(data.logradouro);
+          setBairro(data.bairro);
+          setCidade(data.localidade);
+          setUf(data.uf);
+        });
+    },
+    [cep]
+  );
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -97,21 +101,18 @@ export default function SignUp() {
       attributeUf,
     ];
 
-    UserPool.signUp(
-      email,
-      password,
-      attributeList,
-      null,
-      (err, data) => {
-        if (err) {
-          console.error(err);
-        }else{
-          alert("deu certo")
-          window.location.href = "/login"
-        }
-        
+    UserPool.signUp(email, password, attributeList, null, (err, data) => {
+      if (err) {
+        console.error(err);
+      } else {
+        setVisivel(true);
+        alert(
+          "Usuário cadastrado com sucesso! Copie o código enviado para o seu email e click no botão 'verificar'"
+        );
+
+        //window.location.href = "/login"
       }
-    );
+    });
   };
 
   const Title = styled.h1`
@@ -121,7 +122,7 @@ export default function SignUp() {
   `;
 
   const DivStyle = styled.div`
-    margin-top: 17vh;
+    margin-top: 33vh;
   `;
 
   return (
@@ -282,6 +283,7 @@ export default function SignUp() {
               >
                 Comece Agora
               </Button>
+              {visivel ? <CodigoVerificar email={email} password={password} /> : null}
               <Grid container justifyContent="flex-end">
                 <Grid item>
                   <Link
@@ -304,4 +306,3 @@ export default function SignUp() {
     </>
   );
 }
-*/
