@@ -13,7 +13,7 @@ import Sobre from "./components/pages/sobre/Sobre";
 
 import HomeTwo from "./components-learning/pages/HomeTwo";
 
-import CodigoVerificar from "./components/molecules/CodigoVerificar";
+
 
 
 import "./components/molecules/menu.css";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/comprar" element={<Comprar  />} />
         <Route path="/sobre" element={<Sobre />}/>
 
-        <Route path="/confirma" element={<CodigoVerificar />}/>
+        
         
         
         <Route path="/learning" element={<HomeTwo />}/>
