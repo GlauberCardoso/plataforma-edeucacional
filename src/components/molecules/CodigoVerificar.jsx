@@ -1,52 +1,70 @@
-import React from 'react';
-import { Grid, OutlinedInput, Button } from '@mui/material';
-import { CognitoUser } from "amazon-cognito-identity-js";
+import React from "react";
+import { Grid, OutlinedInput, Button } from "@mui/material";
+import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 
-import UserPool from '../pages/cadastro/UserPool';
+import UserPool from "../pages/cadastro/UserPool";
 
 export default function CodigoVerificar(props) {
- const [code,setCode] = React.useState();
- const { email} = props;
+  const [code, setCode] = React.useState();
+  const { email, password } = props;
 
- const handleVerification = async (event) => {
+  const handleVerification = async (event) => {
     event.preventDefault();
 
     const user = new CognitoUser({ Username: email, Pool: UserPool });
 
-    user.confirmRegistration(code, true, (err, result) => {
-      if (err) {
-        console.log("Deu errado: ", err);
-        alert("erro")
-      } else {
-        console.log("Deu certo: ", result);
-        alert("foi")
+    const authenticationDetails = new AuthenticationDetails({
+      Username: email,
+      Password: password,
+    });
+
+    user.authenticateUser(authenticationDetails, {
+      onSuccess: function(result) {
+        user.getAttributeVerificationCode("email", {
+          onSuccess: function() {
+            user.verifyAttribute('email', code, {
+              onSuccess: function() {
+                console.log("E-mail confirmado com sucesso");
+              },
+              onFailure: function(err) {
+                console.log("Erro ao confirmar e-mail: ", err);
+              }
+            });
+          },
+          onFailure: function(err) {
+            console.log("Erro ao enviar código de verificação: ", err);
+          }
+        });
+      },
+      onFailure: function(err) {
+        console.log("Erro ao autenticar usuário: ", err);
       }
     });
   };
 
   return (
     <>
-    <Grid item xs={12} onSubmit={handleVerification}>
-                  <OutlinedInput
-                    required
-                    fullWidth
-                    name="code"
-                    placeholder="Código de Verificação"
-                    type="text"
-                    id="code"
-                    value={code}
-                    onChange={(event) => setCode(event.target.value)}
-                  />
-                </Grid>
-                <Button
-                
-                type="submit"
-                fullWidth
-                size="large"
-                variant= "outlined"
-                sx={{ mt: 4, mb: 3 }}
-              >
-                VERIFICAR
-              </Button>
-              </>
-)};
+      <Grid item xs={12}>
+        <OutlinedInput
+          required
+          fullWidth
+          name="code"
+          placeholder="Código de Verificação"
+          type="text"
+          id="code"
+          value={code}
+          onChange={(event) => setCode(event.target.value)}
+        />
+      </Grid>
+      <Button
+        fullWidth
+        size="large"
+        variant="outlined"
+        onClick={handleVerification}
+        sx={{ mt: 4, mb: 3 }}
+      >
+        VERIFICAR
+      </Button>
+    </>
+  );
+}
