@@ -4,16 +4,22 @@ import { Link } from "react-router-dom";
 
 import LogoFundoAzul from "../../assets/logo/logo-fundo-azul.jpeg";
 
+import ScrollUp from "../pages/home/js/ScrollUp";
+import ScrollDepoimentos from "../pages/home/js/ScrollDepoimentos";
+import ScrollFaq from "../pages/home/js/ScrollFaq";
+import ScrollContato from "../pages/home/js/ScrollContato";
+
 export default function Menu() {
   return (
       <header>
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <Link to="/" class="navbar-brand">
+            <Link class="navbar-brand">
               <img
                 class="d-flex logo img-fluid"
                 src={LogoFundoAzul}
                 alt="logo"
+                onClick={ScrollUp}
               />
             </Link>
             <button
@@ -30,7 +36,11 @@ export default function Menu() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <Link to="/" class="nav-link" aria-current="page">
+                  <Link 
+                    to="/" 
+                    onClick={ScrollUp}
+                    class="nav-link" 
+                    aria-current="page">
                     Home
                   </Link>
                 </li>
@@ -45,19 +55,31 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <a href='#depoimentos' class="nav-link">
+                  <Link 
+                    to="/"
+                    onClick={ScrollDepoimentos}
+                    class="nav-link"
+                  >
                     Depoimentos
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                <a href="#faq" class="nav-link">
+                  <Link 
+                    to="/"
+                    onClick={ScrollFaq}
+                    class="nav-link"
+                  >
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link">
+                  <Link 
+                    to="/"
+                    onClick={ScrollContato}
+                    class="nav-link"
+                  >
                     Contato
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
                   <Link to="/login" class="nav-link acessar">

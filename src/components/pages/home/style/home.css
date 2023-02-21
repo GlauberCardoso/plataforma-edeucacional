@@ -8,11 +8,11 @@
 }
 
 .video-banner .marketing-description {
+    backdrop-filter: blur(10px);
     position: absolute;
-    background-color: rgba(55, 118, 201, 0.514);
     color: white;
     max-width: 600px;
-    height: 780px;
+    height: 600px;
     top: 70px;
     padding-top: 100px;
 }

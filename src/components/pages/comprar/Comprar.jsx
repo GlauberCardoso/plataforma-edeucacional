@@ -22,11 +22,9 @@ import styled from 'styled-components';
 const theme = createTheme({
   palette: {
     primary: {
-      
       main: "#171846",
     },
     secondary: {
-      
       main: "#FF7D00",
     },
   },
@@ -91,7 +89,6 @@ function PricingContent() {
       />
       <CssBaseline />
       <Menu />
-
       
       <Container
         disableGutters

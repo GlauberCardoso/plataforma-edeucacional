@@ -26,10 +26,6 @@ export default function Home() {
             </video>
           <div
             className="marketing-description"
-            data-aos="fade-right"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="2000"
           >
             <h1 className="marketing-titulo">
               MGM English Online. <br />
@@ -49,9 +45,7 @@ export default function Home() {
       </section>
 
       <section id="depoimentos">
-      <h1 id="dep" data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000">Depoimentos</h1>
+      <h1 id="dep">Depoimentos</h1>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -85,9 +79,7 @@ export default function Home() {
     </section>
 
     <section id="faq">
-      <h1 data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000">Perguntas Frequentes</h1>
+      <h1>Perguntas Frequentes</h1>
       <div class="accordion" id="accordionExample">
 
         <div class="accordion-item">
@@ -158,13 +150,8 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="contact" data-aos="fade-up"
-      data-aos-anchor="#example-anchor"
-      data-aos-offset="300"
-      data-aos-duration="3000">
-        <h1 data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">Entrar em Contato!</h1>
+    <section id="contact">
+        <h1>Entrar em Contato!</h1>
         <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
         <form action="" method="post">
             <TextField id="outlined-basic" label="Nome Completo" variant="outlined" required size="small" />

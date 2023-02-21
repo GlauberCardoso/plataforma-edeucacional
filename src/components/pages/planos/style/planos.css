@@ -1,10 +1,11 @@
 .textos {
   color: #fff;
   text-shadow: black 0.2em 0.2em 0.2em;
-  
 }
 
-
+div .intercambio {
+  backdrop-filter: blur(12px);
+}
 
 .btn {
   background-color: #FF7D00!important;
@@ -16,8 +17,6 @@
 .paragrafos {
   text-decoration: none!important;
 }
-
-
 
 .div-intercambio {
   background-image: url("img/new-zeland.jpg");
@@ -48,9 +47,11 @@
   border-radius: 21px 21px 0 0;
 }
 
+/*
 .div-basico {
   background-color: #171846;
 }
+*/
 
 .img-basico {
   background-image: url("img/inglaterra1.jpg");
@@ -60,6 +61,7 @@
 .flex-equal > * {
   flex: 1;
 }
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
