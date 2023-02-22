@@ -6,30 +6,29 @@ import Typography from '@mui/material/Typography';
 import  {CardActionArea } from '@mui/material';
 import img from "../../components/pages/planos/style/img/inglaterra1.jpg";
 
-
+import { Link } from 'react-router-dom';
 
 export default function MultiActionAreaCard() {
   return (
-    
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="330"
-          image={img}
-          alt="imagem da Inglaterra"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h4" component="div">
-            Basic
-          </Typography>
-          <Typography variant="body3" color="text.primary">
-            Aprenda os fudamentos da língua Inglesa e destrave sua pronúncia. 
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-     
-    </Card>
-   
+    <Link to="/basico" style={{ textDecoration: 'none' }}>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="330"
+            image={img}
+            alt="imagem da Inglaterra"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h4" component="div">
+              Basic
+            </Typography>
+            <Typography variant="body3" color="text.primary">
+              Aprenda os fudamentos da língua Inglesa e destrave sua pronúncia.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Link>
   );
 }

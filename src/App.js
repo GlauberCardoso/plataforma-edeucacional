@@ -9,11 +9,12 @@ import Planos from "./components/pages/planos/Planos";
 import Cadastro from "./components/pages/cadastro/Cadastro";
 import Comprar from "./components/pages/comprar/Comprar";
 import Sobre from "./components/pages/sobre/Sobre";
-import Avancado from "./components/pages/avancado/Avancado";
 
 
 import HomeTwo from "./components-learning/pages/HomeTwo";
-
+import Basico from "./components-learning/pages/basico/Basico";
+import Intermediario from "./components-learning/pages/intermediario/Intermediario";
+import Avancado from "./components-learning/pages/avancado/Avancado";
 
 
 
@@ -22,6 +23,7 @@ import "./components/pages/home/style/home.css";
 import "./components/pages/home/style/media-queries.css";
 import "./components/pages/planos/style/planos.css";
 import "./components/pages/cadastro/cadastro.css";
+
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
 
         
         <Route path="/learning" element={<HomeTwo />}/>
+        <Route path="/basico" element={<Basico />}/>
+        <Route path="/intermediario" element={<Intermediario />}/>
         <Route path="/avancado" element={<Avancado />}/>
 
         
