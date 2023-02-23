@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-modules {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(5, 16, 49);
+    position: sticky!important;
+    top: 138px;
+    padding: 0 50px;
+}
+
+.container-modules .items {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    align-items: flex-start;
+    align-self: center;
+    margin: auto auto 10px;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.container-modules .item {
+    display: inline-flex;
+    align-self: center;
+    position: relative;
+    justify-content: center;
+    min-width: 48px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 15px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #999;
+}
+
+.container-modules .item:active {
+    color: #fff;
+}
+
+.container-modules .item:active::after {
+    background: linear-gradient(135deg,#2c29e6,#595bee, #8e8fe4)!important;
+    visibility: visible;
+}
+
+.container-modules .item::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}

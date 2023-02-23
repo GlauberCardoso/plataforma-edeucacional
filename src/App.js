@@ -23,7 +23,9 @@ import "./components/pages/home/style/home.css";
 import "./components/pages/home/style/media-queries.css";
 import "./components/pages/planos/style/planos.css";
 import "./components/pages/cadastro/cadastro.css";
-
+import "./components-learning/molecules/css/submenu.css";
+import "./components-learning/molecules/css/curso-name.css";
+import "./components-learning/molecules/css/modules.css";
 
 
 function App() {
