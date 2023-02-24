@@ -26,6 +26,8 @@ import "./components/pages/cadastro/cadastro.css";
 import "./components-learning/molecules/css/submenu.css";
 import "./components-learning/molecules/css/curso-name.css";
 import "./components-learning/molecules/css/modules.css";
+import "./components-learning/molecules/css/modules-card.css";
+import "./components-learning/molecules/css/progress.css";
 
 
 function App() {

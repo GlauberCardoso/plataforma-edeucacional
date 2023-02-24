@@ -3,6 +3,7 @@ import AdvancedCourse from '../../molecules/AdvancedCourse';
 import MenuLearning from "../../molecules/MenuLearning"
 import Modules from '../../molecules/Modules';
 import SubMenu from '../../molecules/SubMenu';
+import ModulesCard from '../../molecules/ModulesCard';
 
 export default function Avancado() {
   return (
@@ -11,36 +12,7 @@ export default function Avancado() {
        <SubMenu />
        <AdvancedCourse />
        <Modules />
-       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut autem commodi minima repudiandae facere perferendis incidunt dolorum totam laudantium cupiditate blanditiis, consequatur dolore deserunt, natus, quia reiciendis doloremque! Eum, sint.
-      </p>
+       <ModulesCard />
     </div>
   )
 }

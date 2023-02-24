@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modules-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.number-modules {
+    font-size: 56px;
+    line-height: 56px;
+    color: #051031;
+}
+
+.modules-container .text-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.text .headings-modules {
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.text .headings-modules .aside-right {
+    width: 96px;
+    top: -10px;
+    transform: translateX(-100%);
+    position: absolute;
+}
+
+.text {
+    width: 100%;
+    text-align: left;
+}
+
+.text .headings-modules .aside-left {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    margin-left: 16px;
+    position: relative;
+    color: #FF7D00;
+}
+
+.text .headings-modules .aside-left::before {
+    content: " ";
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    background-color: #051031;
+    left: -15px;
+}
+
+h2 .title-modules {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.text .headings-modules .aside-left .paragraph p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.modules-container .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+.modules-container .card-container .card {
+    margin-bottom: 16px;
+}
+
+.article-card {
+    height: 192px;
+    background-color: #051031;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+}
+
+.article-card .header-card {
+    display: none;
+    max-height: 192px;
+    width: 100%;
+}
+
+.image-grid {
+    display: grid;
+    width: 100%;
+    min-width: 192px;
+    max-width: 192px;
+    max-height: 192px;
+    overflow: hidden;
+}
+
+.article-card .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-card .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 80px;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.article-card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+    height: 192px;
+    color: #FF7D00;
+}
+
+.article-card .content .main {
+    flex-grow: 1;
+    padding: 10px 25px 0 10px;
+}
+
+.article-card .footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 3px;
+    color: #bbb;
+    padding: 0 0 16px 0;
+    margin-left: 15px;
+}
+
+h4.subtitle-heading {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article-card .footer .concluded {
+    color: greenyellow;
+}
+
+#module-12 {
+    margin-bottom: 160px;
+}
