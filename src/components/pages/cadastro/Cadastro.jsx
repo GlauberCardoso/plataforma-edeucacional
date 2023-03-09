@@ -11,7 +11,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "../../molecules/Menu";
 import CodigoVerificar from "../../molecules/CodigoVerificar";
 
-import Footer from "../../molecules/Footer";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -32,6 +31,7 @@ export default function SignUp() {
   const [cidade, setCidade] = React.useState();
   const [uf, setUf] = React.useState();
   const [visivel, setVisivel] = React.useState(false);
+  const [showHelperText, setShowHelperText] = React.useState(false);
 
   React.useEffect(
     (props) => {
@@ -110,7 +110,7 @@ export default function SignUp() {
           "Usuário cadastrado com sucesso! Copie o código enviado para o seu email e click no botão 'verificar'"
         );
 
-        //window.location.href = "/login"
+        
       }
     });
   };
@@ -121,9 +121,14 @@ export default function SignUp() {
     font-weight: 500;
   `;
 
-  const DivStyle = styled.div`
-    margin-top: 33vh;
-  `;
+
+  const handleFocus = () => {
+    setShowHelperText(true);
+  };
+
+  const handlePasswordBlur = () => {
+    setShowHelperText(false);
+  };
 
   return (
     <>
@@ -198,6 +203,26 @@ export default function SignUp() {
                     id="password"
                     autoComplete="new-password"
                     onChange={(event) => setPassword(event.target.value)}
+                    onFocus={handleFocus}
+                    onBlur={handlePasswordBlur}
+                    helperText={
+                      showHelperText && (
+                      <>
+                        A senha deve ter:
+                        <br />
+                        8 caractere(s)
+                        <br />
+                        Contém pelo menos 1 número
+                        <br />
+                        Contém pelo menos um caractere especial
+                        <br />
+                        Contém pelo menos 1 letra maiúscula
+                        <br />
+                        Contém pelo menos 1 letra minúscula.
+                      </>
+                      )
+                    }
+
                   />
                 </Grid>
 
@@ -300,9 +325,7 @@ export default function SignUp() {
         </Container>
       </ThemeProvider>
 
-      <DivStyle>
-        <Footer />
-      </DivStyle>
+      
     </>
   );
 }

@@ -1,45 +1,36 @@
 import React from "react";
 import { Grid, OutlinedInput, Button } from "@mui/material";
-import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
+import { CognitoUser} from "amazon-cognito-identity-js";
 
 import UserPool from "../pages/cadastro/UserPool";
 
 export default function CodigoVerificar(props) {
   const [code, setCode] = React.useState();
-  const { email, password } = props;
+  const { email} = props;
 
   const handleVerification = async (event) => {
     event.preventDefault();
 
     const user = new CognitoUser({ Username: email, Pool: UserPool });
 
-    const authenticationDetails = new AuthenticationDetails({
-      Username: email,
-      Password: password,
-    });
 
-    user.authenticateUser(authenticationDetails, {
-      onSuccess: function(result) {
-        user.getAttributeVerificationCode("email", {
-          onSuccess: function() {
-            user.verifyAttribute('email', code, {
-              onSuccess: function() {
-                console.log("E-mail confirmado com sucesso");
-              },
-              onFailure: function(err) {
-                console.log("Erro ao confirmar e-mail: ", err);
-              }
-            });
-          },
-          onFailure: function(err) {
-            console.log("Erro ao enviar código de verificação: ", err);
-          }
-        });
-      },
-      onFailure: function(err) {
-        console.log("Erro ao autenticar usuário: ", err);
+    user.confirmRegistration(code, true, function(err, result) {
+      if (err) {
+        console.log("Erro ao confirmar usuário: ", err);
+        return;
+      }
+    
+      if (result === "SUCCESS") {
+        console.log("Usuário confirmado com sucesso: ", result);
+        window.location.href = "/login";
+      } else {
+        alert("Confirmação de registro falhou: ", result);
       }
     });
+    
+    
+
+    
   };
 
   return (

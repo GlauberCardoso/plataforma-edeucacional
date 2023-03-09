@@ -2,8 +2,6 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -15,7 +13,7 @@ import { Link} from "react-router-dom";
 import background from "./style/backgroundmedium.jpg";
 import Menu from "../../molecules/Menu";
 import styled from "styled-components";
-import Footer from "../../molecules/Footer";
+
 
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "../cadastro/UserPool";
@@ -44,7 +42,7 @@ export default function SignInSide() {
     user.authenticateUser(authDetails, {
       onSuccess: (data) => {
         console.log("onSuccess: ", data);
-        alert("Usuário Logado")
+        window.location.href = "/aprendizado";
         
         
       },
@@ -121,11 +119,6 @@ export default function SignInSide() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Salvar"
-              />
-
               <Button
                 type="submit"
                 fullWidth
@@ -166,7 +159,7 @@ export default function SignInSide() {
           </Box>
         </Grid>
       </Grid>
-      <Footer />
+      
     </ThemeProvider>
   );
 }

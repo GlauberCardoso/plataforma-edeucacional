@@ -43,7 +43,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />}/>
 
         
-        <Route path="/learning" element={<HomeTwo />}/>
+        <Route path="/aprendizado" element={<HomeTwo />}/>
         <Route path="/basico" element={<Basico />}/>
         <Route path="/intermediario" element={<Intermediario />}/>
         <Route path="/avancado" element={<Avancado />}/>
