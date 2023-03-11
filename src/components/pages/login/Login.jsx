@@ -7,16 +7,15 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 import background from "./style/backgroundmedium.jpg";
 import Menu from "../../molecules/Menu";
 import styled from "styled-components";
 
-
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "../cadastro/UserPool";
+
 
 const theme = createTheme();
 
@@ -24,8 +23,6 @@ export default function SignInSide() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   
-  
-
   const onSubmit = (event) => {
     event.preventDefault();
 
@@ -43,8 +40,7 @@ export default function SignInSide() {
       onSuccess: (data) => {
         console.log("onSuccess: ", data);
         window.location.href = "/aprendizado";
-        
-        
+      
       },
       onFailure: (err) => {
         console.error("onFailure: ", err);
@@ -64,6 +60,7 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={theme}>
+     
       <Menu />
       <Grid container component="main" sx={{ height: "100vh" }}>
         <CssBaseline />
@@ -128,7 +125,6 @@ export default function SignInSide() {
               >
                 {"LOGIN"}
               </Button>
-              
 
               <Grid container>
                 <Grid item xs>
@@ -148,11 +144,6 @@ export default function SignInSide() {
                   >
                     {"Cadastra-se"}
                   </Link>
-
-                  
-
-
-                  
                 </Grid>
               </Grid>
             </Box>
