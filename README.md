@@ -26,4 +26,6 @@
  **Observação:** o backend da aplicação foi desenvolvido a partir de estudos de Node.js,<a href="https://github.com/JessanyKaline/projeto-backend-plataforma-educacional"> clique aqui</a> para visualizar o arquivo que serviu como base para o desenvolvimento.
  
 Sua estrutura de cadastro e confirmação de usuário assim como gerenciamento de confirmações e login, estão atrelados ao serviços da AWS. 
+
+Para visualização do deploy <a href="http://site-mgm-teste.s3-website-us-east-1.amazonaws.com/"> clique aqui </a>. Reforçamos que ainda não foi desenvolvida todas as funcionalidades, porém é possível se cadastrar, autenticar e realizar o login. 
  
