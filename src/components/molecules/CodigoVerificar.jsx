@@ -1,40 +1,42 @@
 import React from "react";
 import { Grid, OutlinedInput, Button } from "@mui/material";
-import { CognitoUser} from "amazon-cognito-identity-js";
+import { CognitoUser } from "amazon-cognito-identity-js";
+import Redireciona from "./RedirecionaLogin";
 
 import UserPool from "../pages/cadastro/UserPool";
 
 export default function CodigoVerificar(props) {
   const [code, setCode] = React.useState();
-  const { email} = props;
+  const [dialogOpen, setDialogOpen] = React.useState(false);
+  const { email } = props;
 
   const handleVerification = async (event) => {
     event.preventDefault();
 
     const user = new CognitoUser({ Username: email, Pool: UserPool });
 
-
-    user.confirmRegistration(code, true, function(err, result) {
+    user.confirmRegistration(code, true, function (err, result) {
       if (err) {
         console.log("Erro ao confirmar usuário: ", err);
         return;
       }
-    
+
       if (result === "SUCCESS") {
         console.log("Usuário confirmado com sucesso: ", result);
-        window.location.href = "/login";
+        setDialogOpen(true);
       } else {
         alert("Confirmação de registro falhou: ", result);
       }
     });
-    
-    
+  };
 
-    
+  const handleClose = () => {
+    setDialogOpen(false);
   };
 
   return (
     <>
+      <Redireciona open={dialogOpen} handleClose={handleClose} />
       <Grid item xs={12}>
         <OutlinedInput
           required

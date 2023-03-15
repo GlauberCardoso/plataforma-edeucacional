@@ -15,6 +15,7 @@ import styled from "styled-components";
 
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "../cadastro/UserPool";
+import Redireciona from "../../molecules/RedirecionaLearning"
 
 
 const theme = createTheme();
@@ -22,6 +23,7 @@ const theme = createTheme();
 export default function SignInSide() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [openDialog, setOpenDialog] = React.useState(false);
   
   const onSubmit = (event) => {
     event.preventDefault();
@@ -39,7 +41,7 @@ export default function SignInSide() {
     user.authenticateUser(authDetails, {
       onSuccess: (data) => {
         console.log("onSuccess: ", data);
-        window.location.href = "/aprendizado";
+        setOpenDialog(true)
       
       },
       onFailure: (err) => {
@@ -58,10 +60,15 @@ export default function SignInSide() {
     font-weight: 500;
   `;
 
+  const handleClose = () => {
+    setOpenDialog(false);
+  };
+
   return (
     <ThemeProvider theme={theme}>
      
       <Menu />
+      <Redireciona open={openDialog} handleClose={handleClose} />
       <Grid container component="main" sx={{ height: "100vh" }}>
         <CssBaseline />
         <Grid
